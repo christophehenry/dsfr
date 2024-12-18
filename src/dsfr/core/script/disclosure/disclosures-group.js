@@ -150,7 +150,7 @@ class DisclosuresGroup extends Instance {
   }
 
   set index (value) {
-    if (value < -1 || value >= this.length || value === this._index) return;
+    if (value < 0 || value >= this.length || value === this._index) return;
     this._index = value;
     for (let i = 0; i < this.length; i++) {
       const member = this.members[i];
